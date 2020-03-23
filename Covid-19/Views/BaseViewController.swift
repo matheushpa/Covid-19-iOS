@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  BaseViewController.swift
 //  Covid-19
 //
 //  Created by Matheus Holanda Pinheiro de Albuquerque on 23/03/20.
@@ -8,13 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-
-
 }
-
