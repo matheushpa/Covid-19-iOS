@@ -19,6 +19,15 @@
 		2F3B48B82429395100A06377 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B48B72429395100A06377 /* BaseViewController.swift */; };
 		2F3B48B92429395100A06377 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B48B72429395100A06377 /* BaseViewController.swift */; };
 		2F3B48BA2429395100A06377 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B48B72429395100A06377 /* BaseViewController.swift */; };
+		2F3B48BC24293FF500A06377 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B48BB24293FF500A06377 /* ApiClient.swift */; };
+		2F3B48BD24293FF500A06377 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B48BB24293FF500A06377 /* ApiClient.swift */; };
+		2F3B48BE24293FF500A06377 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B48BB24293FF500A06377 /* ApiClient.swift */; };
+		2F3B48C1242941A900A06377 /* Cases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B48C0242941A900A06377 /* Cases.swift */; };
+		2F3B48C2242941A900A06377 /* Cases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B48C0242941A900A06377 /* Cases.swift */; };
+		2F3B48C3242941A900A06377 /* Cases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B48C0242941A900A06377 /* Cases.swift */; };
+		2F3B48C6242944B100A06377 /* WorldwideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B48C5242944B100A06377 /* WorldwideViewModel.swift */; };
+		2F3B48C7242944B100A06377 /* WorldwideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B48C5242944B100A06377 /* WorldwideViewModel.swift */; };
+		2F3B48C8242944B100A06377 /* WorldwideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B48C5242944B100A06377 /* WorldwideViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +62,9 @@
 		2F3B48A524292EEC00A06377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F3B48B12429391000A06377 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		2F3B48B72429395100A06377 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2F3B48BB24293FF500A06377 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		2F3B48C0242941A900A06377 /* Cases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cases.swift; sourceTree = "<group>"; };
+		2F3B48C5242944B100A06377 /* WorldwideViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldwideViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +118,11 @@
 				2F3B488124292EEA00A06377 /* AppDelegate.swift */,
 				2F3B488324292EEA00A06377 /* SceneDelegate.swift */,
 				2F3B488F24292EEB00A06377 /* Info.plist */,
+				2F3B48C4242941BB00A06377 /* Models */,
 				2F3B48B52429391A00A06377 /* Views */,
+				2F3B48C9242944B600A06377 /* ViewModels */,
 				2F3B48B62429392600A06377 /* Resources */,
+				2F3B48BF24293FFA00A06377 /* Services */,
 			);
 			path = "Covid-19";
 			sourceTree = "<group>";
@@ -146,6 +161,30 @@
 				2F3B488C24292EEB00A06377 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		2F3B48BF24293FFA00A06377 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2F3B48BB24293FF500A06377 /* ApiClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2F3B48C4242941BB00A06377 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F3B48C0242941A900A06377 /* Cases.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F3B48C9242944B600A06377 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2F3B48C5242944B100A06377 /* WorldwideViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +320,10 @@
 				2F3B488224292EEA00A06377 /* AppDelegate.swift in Sources */,
 				2F3B48B82429395100A06377 /* BaseViewController.swift in Sources */,
 				2F3B48B22429391000A06377 /* MainTabBarController.swift in Sources */,
+				2F3B48C6242944B100A06377 /* WorldwideViewModel.swift in Sources */,
+				2F3B48C1242941A900A06377 /* Cases.swift in Sources */,
 				2F3B488424292EEA00A06377 /* SceneDelegate.swift in Sources */,
+				2F3B48BC24293FF500A06377 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +333,10 @@
 			files = (
 				2F3B48B32429391000A06377 /* MainTabBarController.swift in Sources */,
 				2F3B489924292EEC00A06377 /* Covid_19Tests.swift in Sources */,
+				2F3B48C2242941A900A06377 /* Cases.swift in Sources */,
 				2F3B48B92429395100A06377 /* BaseViewController.swift in Sources */,
+				2F3B48C7242944B100A06377 /* WorldwideViewModel.swift in Sources */,
+				2F3B48BD24293FF500A06377 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +346,10 @@
 			files = (
 				2F3B48B42429391000A06377 /* MainTabBarController.swift in Sources */,
 				2F3B48A424292EEC00A06377 /* Covid_19UITests.swift in Sources */,
+				2F3B48C3242941A900A06377 /* Cases.swift in Sources */,
 				2F3B48BA2429395100A06377 /* BaseViewController.swift in Sources */,
+				2F3B48C8242944B100A06377 /* WorldwideViewModel.swift in Sources */,
+				2F3B48BE24293FF500A06377 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,21 +19,26 @@ class MainTabBarController: UITabBarController {
     // MARK: - Setup methods
     func setupTabBarViews() {
         let firstViewController = UINavigationController(rootViewController: BaseViewController())
-        let firstTabBarItem = UITabBarItem(title: "Test",
+        let firstTabBarItem = UITabBarItem(title: "Worldwide",
                                            image: UIImage(named: ""),
                                            selectedImage: UIImage(named: ""))
         firstViewController.tabBarItem = firstTabBarItem
         let secondViewController = UINavigationController(rootViewController: BaseViewController())
-        let secondTabBarItem = UITabBarItem(title: "Test 2",
+        let secondTabBarItem = UITabBarItem(title: "Countries",
                                             image: UIImage(named: ""),
                                             selectedImage: UIImage(named: ""))
         secondViewController.tabBarItem = secondTabBarItem
-        self.viewControllers = [firstViewController, secondViewController]
+        let thirdViewController = UINavigationController(rootViewController: BaseViewController())
+        let thirdTabBarItem = UITabBarItem(title: "Corona",
+                                            image: UIImage(named: ""),
+                                            selectedImage: UIImage(named: ""))
+        thirdViewController.tabBarItem = thirdTabBarItem
+        self.viewControllers = [firstViewController, secondViewController, thirdViewController]
     }
     
     func setupTabBarLayout() {
         UITabBar.appearance().barTintColor = .white
-        UITabBar.appearance().tintColor = UIColor(red: 49/255, green: 172/255, blue: 151/255, alpha: 1)
+        UITabBar.appearance().tintColor = UIColor(red: 68/255, green: 22/255, blue: 70/255, alpha: 1)
         UITabBar.appearance().unselectedItemTintColor = .gray
     }
 }

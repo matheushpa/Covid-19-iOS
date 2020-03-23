@@ -9,10 +9,12 @@
 import UIKit
 
 class BaseViewController: UIViewController {
+    
+    let worldwideViewModel = WorldwideViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .white
+        worldwideViewModel.getWorldwideCases()
     }
 }
