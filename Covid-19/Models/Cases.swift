@@ -23,4 +23,9 @@ class Cases: Codable {
         let decoded = try? JSONDecoder().decode(Cases.self, from: data)
         return decoded
     }
+    
+    static func decodeCountries(from data: Data) -> [Cases]? {
+        let decoded = try? JSONDecoder().decode([Cases].self, from: data)
+        return decoded
+    }
 }

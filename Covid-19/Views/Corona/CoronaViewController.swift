@@ -1,5 +1,5 @@
 //
-//  BaseViewController.swift
+//  CoronaViewController.swift
 //  Covid-19
 //
 //  Created by Matheus Holanda Pinheiro de Albuquerque on 23/03/20.
@@ -8,13 +8,10 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
-    
-    let worldwideViewModel = WorldwideViewModel()
+class CoronaViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
-//        worldwideViewModel.getWorldwideCases()
+
     }
 }

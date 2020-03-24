@@ -15,7 +15,7 @@ class ApiClient {
     static let shared = ApiClient()
     
     func fetchAllWorldwideCases(completion: @escaping (Result<Cases, Error>) -> ()) {
-        guard let url = URL(string: baseURL + "all/") else { return }
+        guard let url = URL(string: baseURL + "all") else { return }
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let errorMessage = error {
                 print(errorMessage.localizedDescription)
@@ -23,6 +23,20 @@ class ApiClient {
                 return
             } else if let currentData = data, let worldwideCases = Cases.decode(from: currentData) {
                 completion(.success(worldwideCases))
+            }
+            }.resume()
+    }
+    
+    func fetchAllCountriesCases(completion: @escaping (Result<[Cases], Error>) -> ()) {
+        guard let url = URL(string: baseURL + "countries") else { return }
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if let errorMessage = error {
+                print(errorMessage.localizedDescription)
+                completion(.failure(errorMessage))
+                return
+            } else if let currentData = data, let countriesCases = Cases.decodeCountries(from: currentData) {
+                print(countriesCases)
+                completion(.success(countriesCases))
             }
             }.resume()
     }
