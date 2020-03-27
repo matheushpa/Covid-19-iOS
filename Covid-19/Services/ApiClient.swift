@@ -35,7 +35,6 @@ class ApiClient {
                 completion(.failure(errorMessage))
                 return
             } else if let currentData = data, let countriesCases = Cases.decodeCountries(from: currentData) {
-                print(countriesCases)
                 completion(.success(countriesCases))
             }
             }.resume()

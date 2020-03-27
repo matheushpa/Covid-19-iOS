@@ -14,9 +14,16 @@ class Cases: Codable {
     var deaths: Int?
     var recovered: Int?
     var updated: Int?
+    var countryInfo: Country?
+    var country: String?
+    var todayCases: Int?
+    var active: Int?
+    var critical: Int?
+    var casesPerOneMillion: Float?
+    var deathsPerOneMillion: Float?
     
     enum CodingKeys: String, CodingKey {
-        case cases, deaths, recovered, updated
+        case cases, deaths, recovered, updated, country, todayCases, active, critical, countryInfo, casesPerOneMillion, deathsPerOneMillion
     }
     
     static func decode(from data: Data) -> Cases? {
@@ -27,5 +34,19 @@ class Cases: Codable {
     static func decodeCountries(from data: Data) -> [Cases]? {
         let decoded = try? JSONDecoder().decode([Cases].self, from: data)
         return decoded
+    }
+}
+
+class Country: Codable {
+    
+    var flag: String?
+    var iso2: String?
+    var iso3: String?
+    var _id: Int?
+    var lat: Float?
+    var long: Float?
+    
+    enum CodingKeys: String, CodingKey {
+        case flag, iso2, iso3, lat, long, _id
     }
 }
