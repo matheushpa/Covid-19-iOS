@@ -25,7 +25,7 @@ class CountryDetailsViewModel {
                 self.countryCase = countryCase
                 self.delegate?.requestSuccess()
             case .failure(let error):
-                print("Failed to fetch Country case: ", error.localizedDescription)
+                print("Failed to fetch Country (\(country)) case: ", error.localizedDescription)
                 self.delegate?.requestFailure()
             }
         }
