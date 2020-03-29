@@ -28,7 +28,7 @@ class CountriesViewController: BaseViewController {
         collectionView.showsVerticalScrollIndicator = false
         collectionView.backgroundColor = .white
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.register(CountryCollectionViewCell.self, forCellWithReuseIdentifier: "cellIdentifier")
+        collectionView.register(CountryCollectionViewCell.self, forCellWithReuseIdentifier: kCountriesCellIdentifier)
         return collectionView
     }()
     
@@ -59,7 +59,7 @@ extension CountriesViewController: UICollectionViewDelegate, UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellIdentifier", for: indexPath) as? CountryCollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kCountriesCellIdentifier, for: indexPath) as? CountryCollectionViewCell {
             cell.bindData(country: viewModel.countryDetails(index: indexPath.row))
             return cell
         } else {
