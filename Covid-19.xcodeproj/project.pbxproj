@@ -46,6 +46,12 @@
 		2FB27577242EAE520058274E /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB27576242EAE520058274E /* ImageManager.swift */; };
 		2FB27578242EAE520058274E /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB27576242EAE520058274E /* ImageManager.swift */; };
 		2FB27579242EAE520058274E /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB27576242EAE520058274E /* ImageManager.swift */; };
+		2FD40C202430EE2500269A64 /* CountryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD40C1F2430EE2500269A64 /* CountryDetailsViewController.swift */; };
+		2FD40C212430EE2500269A64 /* CountryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD40C1F2430EE2500269A64 /* CountryDetailsViewController.swift */; };
+		2FD40C222430EE2500269A64 /* CountryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD40C1F2430EE2500269A64 /* CountryDetailsViewController.swift */; };
+		2FD40C242430EE5700269A64 /* CountryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD40C232430EE5700269A64 /* CountryDetailsViewModel.swift */; };
+		2FD40C252430EE5700269A64 /* CountryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD40C232430EE5700269A64 /* CountryDetailsViewModel.swift */; };
+		2FD40C262430EE5700269A64 /* CountryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD40C232430EE5700269A64 /* CountryDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +95,8 @@
 		2FB0B74C24296A2A005F5973 /* CountriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewModel.swift; sourceTree = "<group>"; };
 		2FB0B750242A5D36005F5973 /* CountryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCollectionViewCell.swift; sourceTree = "<group>"; };
 		2FB27576242EAE520058274E /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		2FD40C1F2430EE2500269A64 /* CountryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewController.swift; sourceTree = "<group>"; };
+		2FD40C232430EE5700269A64 /* CountryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +183,7 @@
 			children = (
 				2F3B48B72429395100A06377 /* BaseViewController.swift */,
 				2F3B48B12429391000A06377 /* MainTabBarController.swift */,
+				2FD40C1F2430EE2500269A64 /* CountryDetailsViewController.swift */,
 				2FB0B73A24295515005F5973 /* Corona */,
 				2FB0B7392429550E005F5973 /* Countries */,
 				2FB0B738242954FF005F5973 /* Worldwide */,
@@ -211,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				2FB0B74C24296A2A005F5973 /* CountriesViewModel.swift */,
+				2FD40C232430EE5700269A64 /* CountryDetailsViewModel.swift */,
 				2F3B48C5242944B100A06377 /* WorldwideViewModel.swift */,
 			);
 			path = ViewModels;
@@ -387,6 +397,8 @@
 				2FB0B73C242955F2005F5973 /* CountriesViewController.swift in Sources */,
 				2F3B48C6242944B100A06377 /* WorldwideViewModel.swift in Sources */,
 				2F3B48C1242941A900A06377 /* Cases.swift in Sources */,
+				2FD40C242430EE5700269A64 /* CountryDetailsViewModel.swift in Sources */,
+				2FD40C202430EE2500269A64 /* CountryDetailsViewController.swift in Sources */,
 				2FB0B7442429561C005F5973 /* CoronaViewController.swift in Sources */,
 				2FB0B74024295610005F5973 /* WorldwideViewController.swift in Sources */,
 				2F3B488424292EEA00A06377 /* SceneDelegate.swift in Sources */,
@@ -399,7 +411,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FD40C212430EE2500269A64 /* CountryDetailsViewController.swift in Sources */,
 				2FB0B74124295610005F5973 /* WorldwideViewController.swift in Sources */,
+				2FD40C252430EE5700269A64 /* CountryDetailsViewModel.swift in Sources */,
 				2F3B48B32429391000A06377 /* MainTabBarController.swift in Sources */,
 				2FB0B7452429561C005F5973 /* CoronaViewController.swift in Sources */,
 				2FB27578242EAE520058274E /* ImageManager.swift in Sources */,
@@ -418,7 +432,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FD40C222430EE2500269A64 /* CountryDetailsViewController.swift in Sources */,
 				2FB0B74224295610005F5973 /* WorldwideViewController.swift in Sources */,
+				2FD40C262430EE5700269A64 /* CountryDetailsViewModel.swift in Sources */,
 				2F3B48B42429391000A06377 /* MainTabBarController.swift in Sources */,
 				2FB0B7462429561C005F5973 /* CoronaViewController.swift in Sources */,
 				2FB27579242EAE520058274E /* ImageManager.swift in Sources */,
