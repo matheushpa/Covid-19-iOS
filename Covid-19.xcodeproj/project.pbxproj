@@ -52,6 +52,12 @@
 		2FD40C242430EE5700269A64 /* CountryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD40C232430EE5700269A64 /* CountryDetailsViewModel.swift */; };
 		2FD40C252430EE5700269A64 /* CountryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD40C232430EE5700269A64 /* CountryDetailsViewModel.swift */; };
 		2FD40C262430EE5700269A64 /* CountryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD40C232430EE5700269A64 /* CountryDetailsViewModel.swift */; };
+		2FD40C282430F60700269A64 /* ApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD40C272430F60700269A64 /* ApiConfig.swift */; };
+		2FD40C292430F60700269A64 /* ApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD40C272430F60700269A64 /* ApiConfig.swift */; };
+		2FD40C2A2430F60700269A64 /* ApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD40C272430F60700269A64 /* ApiConfig.swift */; };
+		2FD40C2C2430F7AF00269A64 /* ApiConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FD40C2B2430F7AF00269A64 /* ApiConfig.plist */; };
+		2FD40C2D2430F7AF00269A64 /* ApiConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FD40C2B2430F7AF00269A64 /* ApiConfig.plist */; };
+		2FD40C2E2430F7AF00269A64 /* ApiConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FD40C2B2430F7AF00269A64 /* ApiConfig.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +103,8 @@
 		2FB27576242EAE520058274E /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		2FD40C1F2430EE2500269A64 /* CountryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewController.swift; sourceTree = "<group>"; };
 		2FD40C232430EE5700269A64 /* CountryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewModel.swift; sourceTree = "<group>"; };
+		2FD40C272430F60700269A64 /* ApiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConfig.swift; sourceTree = "<group>"; };
+		2FD40C2B2430F7AF00269A64 /* ApiConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiConfig.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +211,8 @@
 		2F3B48BF24293FFA00A06377 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				2FD40C2B2430F7AF00269A64 /* ApiConfig.plist */,
+				2FD40C272430F60700269A64 /* ApiConfig.swift */,
 				2F3B48BB24293FF500A06377 /* ApiClient.swift */,
 			);
 			path = Services;
@@ -365,6 +375,7 @@
 			files = (
 				2F3B488E24292EEB00A06377 /* LaunchScreen.storyboard in Resources */,
 				2F3B488B24292EEB00A06377 /* Assets.xcassets in Resources */,
+				2FD40C2C2430F7AF00269A64 /* ApiConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +383,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FD40C2D2430F7AF00269A64 /* ApiConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FD40C2E2430F7AF00269A64 /* ApiConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +412,7 @@
 				2F3B48C1242941A900A06377 /* Cases.swift in Sources */,
 				2FD40C242430EE5700269A64 /* CountryDetailsViewModel.swift in Sources */,
 				2FD40C202430EE2500269A64 /* CountryDetailsViewController.swift in Sources */,
+				2FD40C282430F60700269A64 /* ApiConfig.swift in Sources */,
 				2FB0B7442429561C005F5973 /* CoronaViewController.swift in Sources */,
 				2FB0B74024295610005F5973 /* WorldwideViewController.swift in Sources */,
 				2F3B488424292EEA00A06377 /* SceneDelegate.swift in Sources */,
@@ -416,6 +430,7 @@
 				2FD40C252430EE5700269A64 /* CountryDetailsViewModel.swift in Sources */,
 				2F3B48B32429391000A06377 /* MainTabBarController.swift in Sources */,
 				2FB0B7452429561C005F5973 /* CoronaViewController.swift in Sources */,
+				2FD40C292430F60700269A64 /* ApiConfig.swift in Sources */,
 				2FB27578242EAE520058274E /* ImageManager.swift in Sources */,
 				2FB0B73D242955F2005F5973 /* CountriesViewController.swift in Sources */,
 				2FB0B74E24296A2A005F5973 /* CountriesViewModel.swift in Sources */,
@@ -437,6 +452,7 @@
 				2FD40C262430EE5700269A64 /* CountryDetailsViewModel.swift in Sources */,
 				2F3B48B42429391000A06377 /* MainTabBarController.swift in Sources */,
 				2FB0B7462429561C005F5973 /* CoronaViewController.swift in Sources */,
+				2FD40C2A2430F60700269A64 /* ApiConfig.swift in Sources */,
 				2FB27579242EAE520058274E /* ImageManager.swift in Sources */,
 				2FB0B73E242955F2005F5973 /* CountriesViewController.swift in Sources */,
 				2FB0B74F24296A2A005F5973 /* CountriesViewModel.swift in Sources */,

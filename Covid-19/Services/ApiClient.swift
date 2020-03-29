@@ -10,12 +10,13 @@ import Foundation
 
 class ApiClient {
 
-    var baseURL = "https://corona.lmao.ninja/"
+    var baseURL = "\(ApiConfig.getMainEnvironment())"
         
     static let shared = ApiClient()
     
     func fetchAllWorldwideCases(completion: @escaping (Result<Cases, Error>) -> ()) {
         guard let url = URL(string: baseURL + "all") else { return }
+        print(url)
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let errorMessage = error {
                 print(errorMessage.localizedDescription)
@@ -29,6 +30,7 @@ class ApiClient {
     
     func fetchAllCountriesCases(completion: @escaping (Result<[Cases], Error>) -> ()) {
         guard let url = URL(string: baseURL + "countries") else { return }
+        print(url)
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let errorMessage = error {
                 print(errorMessage.localizedDescription)
