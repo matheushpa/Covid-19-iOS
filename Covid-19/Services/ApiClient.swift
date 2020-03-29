@@ -39,4 +39,17 @@ class ApiClient {
             }
             }.resume()
     }
+    
+    func fetchCountryCase(country: String, completion: @escaping (Result<Cases, Error>) -> ()) {
+        guard let url = URL(string: baseURL + "countries/\(country)") else { return }
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if let errorMessage = error {
+                print(errorMessage.localizedDescription)
+                completion(.failure(errorMessage))
+                return
+            } else if let currentData = data, let countryCase = Cases.decode(from: currentData) {
+                completion(.success(countryCase))
+            }
+            }.resume()
+    }
 }

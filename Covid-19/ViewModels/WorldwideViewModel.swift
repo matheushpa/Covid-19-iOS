@@ -8,17 +8,25 @@
 
 import UIKit
 
+protocol WorldwideViewModelDelegate: class {
+    func requestSuccess()
+    func requestFailure()
+}
+
 class WorldwideViewModel {
     
     var worldwideCases: Cases?
+    weak var delegate: WorldwideViewModelDelegate?
     
     func getWorldwideCases() {
         ApiClient.shared.fetchAllWorldwideCases { (cases) in
             switch cases {
             case .success(let cases):
                 self.worldwideCases = cases
+                self.delegate?.requestSuccess()
             case .failure(let error):
                 print("Failed to fetch Worldwide Cases: ", error.localizedDescription)
+                self.delegate?.requestFailure()
             }
         }
     }
