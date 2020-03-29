@@ -14,7 +14,11 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupLayout()
+    }
+    
+    // MARK: - Setup methods
+    func setupLayout() {
         view.backgroundColor = .white
-        worldwideViewModel.getWorldwideCases()
     }
 }

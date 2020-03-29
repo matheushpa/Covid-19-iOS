@@ -9,8 +9,11 @@
 import UIKit
 
 class WorldwideViewController: BaseViewController {
+    
+    let viewModel = WorldwideViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.getWorldwideCases()
     }
 }
