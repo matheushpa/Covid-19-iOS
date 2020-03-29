@@ -28,6 +28,24 @@
 		2F3B48C6242944B100A06377 /* WorldwideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B48C5242944B100A06377 /* WorldwideViewModel.swift */; };
 		2F3B48C7242944B100A06377 /* WorldwideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B48C5242944B100A06377 /* WorldwideViewModel.swift */; };
 		2F3B48C8242944B100A06377 /* WorldwideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B48C5242944B100A06377 /* WorldwideViewModel.swift */; };
+		2FB0B73C242955F2005F5973 /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0B73B242955F2005F5973 /* CountriesViewController.swift */; };
+		2FB0B73D242955F2005F5973 /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0B73B242955F2005F5973 /* CountriesViewController.swift */; };
+		2FB0B73E242955F2005F5973 /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0B73B242955F2005F5973 /* CountriesViewController.swift */; };
+		2FB0B74024295610005F5973 /* WorldwideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0B73F24295610005F5973 /* WorldwideViewController.swift */; };
+		2FB0B74124295610005F5973 /* WorldwideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0B73F24295610005F5973 /* WorldwideViewController.swift */; };
+		2FB0B74224295610005F5973 /* WorldwideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0B73F24295610005F5973 /* WorldwideViewController.swift */; };
+		2FB0B7442429561C005F5973 /* CoronaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0B7432429561C005F5973 /* CoronaViewController.swift */; };
+		2FB0B7452429561C005F5973 /* CoronaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0B7432429561C005F5973 /* CoronaViewController.swift */; };
+		2FB0B7462429561C005F5973 /* CoronaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0B7432429561C005F5973 /* CoronaViewController.swift */; };
+		2FB0B74D24296A2A005F5973 /* CountriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0B74C24296A2A005F5973 /* CountriesViewModel.swift */; };
+		2FB0B74E24296A2A005F5973 /* CountriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0B74C24296A2A005F5973 /* CountriesViewModel.swift */; };
+		2FB0B74F24296A2A005F5973 /* CountriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0B74C24296A2A005F5973 /* CountriesViewModel.swift */; };
+		2FB0B751242A5D36005F5973 /* CountryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0B750242A5D36005F5973 /* CountryCollectionViewCell.swift */; };
+		2FB0B752242A5D36005F5973 /* CountryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0B750242A5D36005F5973 /* CountryCollectionViewCell.swift */; };
+		2FB0B753242A5D36005F5973 /* CountryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0B750242A5D36005F5973 /* CountryCollectionViewCell.swift */; };
+		2FB27577242EAE520058274E /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB27576242EAE520058274E /* ImageManager.swift */; };
+		2FB27578242EAE520058274E /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB27576242EAE520058274E /* ImageManager.swift */; };
+		2FB27579242EAE520058274E /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB27576242EAE520058274E /* ImageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +83,12 @@
 		2F3B48BB24293FF500A06377 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		2F3B48C0242941A900A06377 /* Cases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cases.swift; sourceTree = "<group>"; };
 		2F3B48C5242944B100A06377 /* WorldwideViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldwideViewModel.swift; sourceTree = "<group>"; };
+		2FB0B73B242955F2005F5973 /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
+		2FB0B73F24295610005F5973 /* WorldwideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldwideViewController.swift; sourceTree = "<group>"; };
+		2FB0B7432429561C005F5973 /* CoronaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaViewController.swift; sourceTree = "<group>"; };
+		2FB0B74C24296A2A005F5973 /* CountriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewModel.swift; sourceTree = "<group>"; };
+		2FB0B750242A5D36005F5973 /* CountryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCollectionViewCell.swift; sourceTree = "<group>"; };
+		2FB27576242EAE520058274E /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +143,7 @@
 				2F3B488324292EEA00A06377 /* SceneDelegate.swift */,
 				2F3B488F24292EEB00A06377 /* Info.plist */,
 				2F3B48C4242941BB00A06377 /* Models */,
+				2FB27575242EAE390058274E /* Utils */,
 				2F3B48B52429391A00A06377 /* Views */,
 				2F3B48C9242944B600A06377 /* ViewModels */,
 				2F3B48B62429392600A06377 /* Resources */,
@@ -150,6 +175,9 @@
 			children = (
 				2F3B48B72429395100A06377 /* BaseViewController.swift */,
 				2F3B48B12429391000A06377 /* MainTabBarController.swift */,
+				2FB0B73A24295515005F5973 /* Corona */,
+				2FB0B7392429550E005F5973 /* Countries */,
+				2FB0B738242954FF005F5973 /* Worldwide */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,9 +210,43 @@
 		2F3B48C9242944B600A06377 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				2FB0B74C24296A2A005F5973 /* CountriesViewModel.swift */,
 				2F3B48C5242944B100A06377 /* WorldwideViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2FB0B738242954FF005F5973 /* Worldwide */ = {
+			isa = PBXGroup;
+			children = (
+				2FB0B73F24295610005F5973 /* WorldwideViewController.swift */,
+			);
+			path = Worldwide;
+			sourceTree = "<group>";
+		};
+		2FB0B7392429550E005F5973 /* Countries */ = {
+			isa = PBXGroup;
+			children = (
+				2FB0B73B242955F2005F5973 /* CountriesViewController.swift */,
+				2FB0B750242A5D36005F5973 /* CountryCollectionViewCell.swift */,
+			);
+			path = Countries;
+			sourceTree = "<group>";
+		};
+		2FB0B73A24295515005F5973 /* Corona */ = {
+			isa = PBXGroup;
+			children = (
+				2FB0B7432429561C005F5973 /* CoronaViewController.swift */,
+			);
+			path = Corona;
+			sourceTree = "<group>";
+		};
+		2FB27575242EAE390058274E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2FB27576242EAE520058274E /* ImageManager.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,12 +380,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F3B488224292EEA00A06377 /* AppDelegate.swift in Sources */,
+				2FB0B751242A5D36005F5973 /* CountryCollectionViewCell.swift in Sources */,
 				2F3B48B82429395100A06377 /* BaseViewController.swift in Sources */,
+				2FB0B74D24296A2A005F5973 /* CountriesViewModel.swift in Sources */,
 				2F3B48B22429391000A06377 /* MainTabBarController.swift in Sources */,
+				2FB0B73C242955F2005F5973 /* CountriesViewController.swift in Sources */,
 				2F3B48C6242944B100A06377 /* WorldwideViewModel.swift in Sources */,
 				2F3B48C1242941A900A06377 /* Cases.swift in Sources */,
+				2FB0B7442429561C005F5973 /* CoronaViewController.swift in Sources */,
+				2FB0B74024295610005F5973 /* WorldwideViewController.swift in Sources */,
 				2F3B488424292EEA00A06377 /* SceneDelegate.swift in Sources */,
 				2F3B48BC24293FF500A06377 /* ApiClient.swift in Sources */,
+				2FB27577242EAE520058274E /* ImageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,12 +399,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB0B74124295610005F5973 /* WorldwideViewController.swift in Sources */,
 				2F3B48B32429391000A06377 /* MainTabBarController.swift in Sources */,
+				2FB0B7452429561C005F5973 /* CoronaViewController.swift in Sources */,
+				2FB27578242EAE520058274E /* ImageManager.swift in Sources */,
+				2FB0B73D242955F2005F5973 /* CountriesViewController.swift in Sources */,
+				2FB0B74E24296A2A005F5973 /* CountriesViewModel.swift in Sources */,
 				2F3B489924292EEC00A06377 /* Covid_19Tests.swift in Sources */,
 				2F3B48C2242941A900A06377 /* Cases.swift in Sources */,
 				2F3B48B92429395100A06377 /* BaseViewController.swift in Sources */,
 				2F3B48C7242944B100A06377 /* WorldwideViewModel.swift in Sources */,
 				2F3B48BD24293FF500A06377 /* ApiClient.swift in Sources */,
+				2FB0B752242A5D36005F5973 /* CountryCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,12 +418,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB0B74224295610005F5973 /* WorldwideViewController.swift in Sources */,
 				2F3B48B42429391000A06377 /* MainTabBarController.swift in Sources */,
+				2FB0B7462429561C005F5973 /* CoronaViewController.swift in Sources */,
+				2FB27579242EAE520058274E /* ImageManager.swift in Sources */,
+				2FB0B73E242955F2005F5973 /* CountriesViewController.swift in Sources */,
+				2FB0B74F24296A2A005F5973 /* CountriesViewModel.swift in Sources */,
 				2F3B48A424292EEC00A06377 /* Covid_19UITests.swift in Sources */,
 				2F3B48C3242941A900A06377 /* Cases.swift in Sources */,
 				2F3B48BA2429395100A06377 /* BaseViewController.swift in Sources */,
 				2F3B48C8242944B100A06377 /* WorldwideViewModel.swift in Sources */,
 				2F3B48BE24293FF500A06377 /* ApiClient.swift in Sources */,
+				2FB0B753242A5D36005F5973 /* CountryCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,17 +18,17 @@ class MainTabBarController: UITabBarController {
     
     // MARK: - Setup methods
     func setupTabBarViews() {
-        let firstViewController = UINavigationController(rootViewController: BaseViewController())
+        let firstViewController = UINavigationController(rootViewController: WorldwideViewController())
         let firstTabBarItem = UITabBarItem(title: "Worldwide",
                                            image: UIImage(named: ""),
                                            selectedImage: UIImage(named: ""))
         firstViewController.tabBarItem = firstTabBarItem
-        let secondViewController = UINavigationController(rootViewController: BaseViewController())
+        let secondViewController = UINavigationController(rootViewController: CountriesViewController())
         let secondTabBarItem = UITabBarItem(title: "Countries",
                                             image: UIImage(named: ""),
                                             selectedImage: UIImage(named: ""))
         secondViewController.tabBarItem = secondTabBarItem
-        let thirdViewController = UINavigationController(rootViewController: BaseViewController())
+        let thirdViewController = UINavigationController(rootViewController: CoronaViewController())
         let thirdTabBarItem = UITabBarItem(title: "Corona",
                                             image: UIImage(named: ""),
                                             selectedImage: UIImage(named: ""))
