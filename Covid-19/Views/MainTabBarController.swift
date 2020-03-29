@@ -19,12 +19,12 @@ class MainTabBarController: UITabBarController {
     // MARK: - Setup methods
     func setupTabBarViews() {
         let firstViewController = UINavigationController(rootViewController: WorldwideViewController())
-        let firstTabBarItem = UITabBarItem(title: "Worldwide",
+        let firstTabBarItem = UITabBarItem(title: kTabBarWorldwide,
                                            image: UIImage(named: ""),
                                            selectedImage: UIImage(named: ""))
         firstViewController.tabBarItem = firstTabBarItem
         let secondViewController = UINavigationController(rootViewController: CountriesViewController())
-        let secondTabBarItem = UITabBarItem(title: "Countries",
+        let secondTabBarItem = UITabBarItem(title: kTabBarCountries,
                                             image: UIImage(named: ""),
                                             selectedImage: UIImage(named: ""))
         secondViewController.tabBarItem = secondTabBarItem
@@ -38,7 +38,7 @@ class MainTabBarController: UITabBarController {
     
     func setupTabBarLayout() {
         UITabBar.appearance().barTintColor = .white
-        UITabBar.appearance().tintColor = UIColor(red: 68/255, green: 22/255, blue: 70/255, alpha: 1)
+        UITabBar.appearance().tintColor = UIColor.init(netHex: kPurpleDefaultColor)
         UITabBar.appearance().unselectedItemTintColor = .gray
     }
 }
