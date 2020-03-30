@@ -10,10 +10,11 @@ import UIKit
 
 class CountryDetailsViewController: BaseViewController {
 
+    let selectedCountry = ""
     let viewModel = CountryDetailsViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.getCountryCase(country: "Brazil")
+        viewModel.getCountryCase(country: selectedCountry)
     }
 }

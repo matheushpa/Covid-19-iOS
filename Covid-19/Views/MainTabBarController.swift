@@ -20,20 +20,15 @@ class MainTabBarController: UITabBarController {
     func setupTabBarViews() {
         let firstViewController = UINavigationController(rootViewController: WorldwideViewController())
         let firstTabBarItem = UITabBarItem(title: kTabBarWorldwide,
-                                           image: UIImage(named: ""),
-                                           selectedImage: UIImage(named: ""))
+                                           image: UIImage(named: "globe"),
+                                           selectedImage: UIImage(named: "globe_filled"))
         firstViewController.tabBarItem = firstTabBarItem
         let secondViewController = UINavigationController(rootViewController: CountriesViewController())
         let secondTabBarItem = UITabBarItem(title: kTabBarCountries,
-                                            image: UIImage(named: ""),
-                                            selectedImage: UIImage(named: ""))
+                                            image: UIImage(named: "country"),
+                                            selectedImage: UIImage(named: "country_filled"))
         secondViewController.tabBarItem = secondTabBarItem
-        let thirdViewController = UINavigationController(rootViewController: CoronaViewController())
-        let thirdTabBarItem = UITabBarItem(title: "Corona",
-                                            image: UIImage(named: ""),
-                                            selectedImage: UIImage(named: ""))
-        thirdViewController.tabBarItem = thirdTabBarItem
-        self.viewControllers = [firstViewController, secondViewController, thirdViewController]
+        self.viewControllers = [firstViewController, secondViewController]
     }
     
     func setupTabBarLayout() {

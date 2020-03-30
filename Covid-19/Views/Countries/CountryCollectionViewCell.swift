@@ -20,26 +20,30 @@ class CountryCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Setup methods
     func setupCellLayout() {
-        countryImageView.image = UIImage(named: "cnn_banner_placeholder")
-        countryImageView.contentMode = .scaleAspectFit
+        let fadedView = UIView(frame: CGRect(x: 0, y: 16, width: contentView.frame.width, height: contentView.frame.height))
+        let gradient = CAGradientLayer()
+        gradient.frame = fadedView.bounds
+        gradient.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
+        fadedView.layer.insertSublayer(gradient, at: 0)
+        countryImageView.addSubview(fadedView)
+        countryImageView.image = UIImage(named: "")
+        countryImageView.contentMode = .scaleAspectFill
+        countryImageView.layer.cornerRadius = 8.0
         countryImageView.clipsToBounds = true
         countryImageView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(countryImageView)
-        countryImageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 24).isActive = true
-        countryImageView.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        countryImageView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
-        countryImageView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
-        setupNewsTitleLayout()
-    }
-    
-    func setupNewsTitleLayout() {
-        countryNameLabel.font = UIFont.systemFont(ofSize: 12)
-        countryNameLabel.textColor = .black
-        countryNameLabel.numberOfLines = 1
+        countryImageView.heightAnchor.constraint(equalToConstant: contentView.frame.height).isActive = true
+        countryImageView.widthAnchor.constraint(equalToConstant: contentView.frame.width).isActive = true
+        countryImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+        countryImageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
+        countryNameLabel.textColor = .white
+        countryNameLabel.numberOfLines = 0
+        countryNameLabel.font = UIFont(name: "HelveticaNeue-Medium", size: 22)
+        countryNameLabel.adjustsFontSizeToFitWidth = true
         countryNameLabel.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(countryNameLabel)
+        fadedView.addSubview(countryNameLabel)
         countryNameLabel.centerXAnchor.constraint(equalTo: countryImageView.centerXAnchor).isActive = true
-        countryNameLabel.topAnchor.constraint(equalTo: countryImageView.bottomAnchor, constant: 4).isActive = true
+        countryNameLabel.centerYAnchor.constraint(equalTo: countryImageView.centerYAnchor).isActive = true
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -47,7 +51,7 @@ class CountryCollectionViewCell: UICollectionViewCell {
     }
     
     func bindData(country: Cases) {
-//        newsTitleLabel.text = content.title
+        countryNameLabel.text = country.country
         guard let flagUrl = URL(string: country.countryInfo?.flag ?? "") else { return }
         ImageManager.shared.downloadImage(from: flagUrl, imageView: countryImageView)
     }
