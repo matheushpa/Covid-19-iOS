@@ -15,11 +15,11 @@ class CountryCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupCellLayout()
+        setupLayout()
     }
     
     // MARK: - Setup methods
-    func setupCellLayout() {
+    func setupLayout() {
         let fadedView = UIView(frame: CGRect(x: 0, y: 16, width: contentView.frame.width, height: contentView.frame.height))
         let gradient = CAGradientLayer()
         gradient.frame = fadedView.bounds
