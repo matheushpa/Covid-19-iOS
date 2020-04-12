@@ -27,12 +27,12 @@ class WorldwideTableViewCell: UITableViewCell {
     // MARK: - Setup methods
     
     func setupLayout() {
-        configureLabel(label: titleLabel, fontName: "HelveticaNeue-Bold", fontSize: 12, color: kWorldwideTitleColor)
+        configureLabel(label: titleLabel, fontName: "Montserrat-SemiBold", fontSize: 12, color: kWorldwideTitleColor)
         contentView.addSubview(titleLabel)
         titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 12).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 24).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8).isActive = true
-        configureLabel(label: numbersLabel, fontName: "HelveticaNeue-Bold", fontSize: 24, color: kWorldwideNumbersColor)
+        configureLabel(label: numbersLabel, fontName: "Montserrat-Bold", fontSize: 24, color: kWorldwideNumbersColor)
         numbersLabel.text = "1,200"
         contentView.addSubview(numbersLabel)
         numbersLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -12).isActive = true
