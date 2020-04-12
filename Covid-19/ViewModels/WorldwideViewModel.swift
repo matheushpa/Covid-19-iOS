@@ -30,4 +30,16 @@ class WorldwideViewModel {
             }
         }
     }
+    
+    func getNumberOfRows() -> Int {
+        return 11
+    }
+    
+    func rowHeight() -> CGFloat {
+        return 74
+    }
+    
+    func getCases() -> Cases {
+        return self.worldwideCases ?? Cases()
+    }
 }

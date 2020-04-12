@@ -21,11 +21,13 @@ class WorldwideViewController: BaseViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(WorldwideTableViewCell.self, forCellReuseIdentifier: kWorldwideIdentifier)
+        tableView.register(WorldwideHeader.self, forHeaderFooterViewReuseIdentifier: kWorldwideHeaderIdentifier)
         return tableView
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.delegate = self
         viewModel.getWorldwideCases()
         setupTableView()
     }
@@ -47,19 +49,49 @@ class WorldwideViewController: BaseViewController {
 extension WorldwideViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 11
+        return viewModel.getNumberOfRows()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 74
+        return viewModel.rowHeight()
     }
+    
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 88
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: kWorldwideHeaderIdentifier) as? WorldwideHeader {
+            return headerView
+        } else {
+            return UIView()
+        }
+    }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: kWorldwideIdentifier, for: indexPath) as? WorldwideTableViewCell {
             cell.titleLabel.text = kWorldwideTitles[indexPath.row]
+            cell.bindData(worldwideCases: viewModel.getCases())
             return cell
         } else {
             return UITableViewCell()
         }
+    }
+}
+
+// MARK: - Worldwide View Model delegate
+
+extension WorldwideViewController: WorldwideViewModelDelegate {
+    
+    func requestSuccess() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+    
+    func requestFailure() {
+        print("FAILURE")
     }
 }

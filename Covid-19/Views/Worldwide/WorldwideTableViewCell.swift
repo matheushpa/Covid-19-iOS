@@ -33,7 +33,6 @@ class WorldwideTableViewCell: UITableViewCell {
         titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 24).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8).isActive = true
         configureLabel(label: numbersLabel, fontName: "Montserrat-Bold", fontSize: 24, color: kWorldwideNumbersColor)
-        numbersLabel.text = "1,200"
         contentView.addSubview(numbersLabel)
         numbersLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -12).isActive = true
         numbersLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 24).isActive = true
@@ -48,5 +47,11 @@ class WorldwideTableViewCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
     }
     
-    func bindData() {}
+    func bindData(worldwideCases: Cases) {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        let formattedNumber = numberFormatter.string(from: NSNumber(value: worldwideCases.deaths ?? 0))
+        numbersLabel.text = formattedNumber
+        print(worldwideCases)
+    }
 }
