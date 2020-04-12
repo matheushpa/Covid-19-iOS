@@ -10,6 +10,8 @@ import UIKit
 
 class CountriesViewController: BaseViewController {
 
+    let searchBar = UISearchBar()
+    let cleanButton = UIButton(type: .system)
     let viewModel = CountriesViewModel()
     
     private lazy var collectionViewLayout: UICollectionViewFlowLayout = {
@@ -34,20 +36,49 @@ class CountriesViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.delegate = self
-        viewModel.getCountriesCases()
-        setupCollectionViewLayout()
+//        viewModel.delegate = self
+//        viewModel.getCountriesCases()
+        setupSearchBar()
+//        setupCollectionViewLayout()
     }
     
     // MARK: - Setup methods
     func setupCollectionViewLayout() {
         view.addSubview(collectionView)
-        collectionView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        collectionView.topAnchor.constraint(equalTo: searchBar.bottomAnchor).isActive = true
         collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
     }
+    
+    func setupSearchBar() {
+        searchBar.delegate = self
+        searchBar.placeholder = kSearch
+        searchBar.showsCancelButton = false
+        if #available(iOS 13.0, *) {
+            searchBar.searchTextField.backgroundColor = .white
+            searchBar.searchTextField.font = UIFont(name: "HelveticaNeue-Regular", size: 14)
+        }
+        searchBar.barTintColor = UIColor.init(netHex: kSearchBarTintColor)
+        searchBar.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(searchBar)
+        // TO DO: - Get status bar actual height
+        searchBar.topAnchor.constraint(equalTo: view.topAnchor, constant: ((navigationController?.navigationBar.frame.height ?? 44) + 44)).isActive = true
+        searchBar.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        searchBar.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        cleanButton.setTitle(kClean, for: .normal)
+        cleanButton.setTitleColor(.gray, for: .normal)
+        cleanButton.titleLabel?.font = UIFont(name: "CNNSansDisplay-Medium", size: 16)
+        cleanButton.translatesAutoresizingMaskIntoConstraints = false
+        searchBar.addSubview(cleanButton)
+        cleanButton.centerYAnchor.constraint(equalTo: searchBar.centerYAnchor).isActive = true
+        cleanButton.trailingAnchor.constraint(equalTo: searchBar.trailingAnchor, constant: -8).isActive = true
+        cleanButton.leadingAnchor.constraint(equalTo: searchBar.searchTextField.trailingAnchor, constant: 8).isActive = true
+//        cleanButton.addTarget(self, action: #selector(cleanSearch), for: .touchUpInside)
+    }
 }
+
+// MARK: - CollectionView delegate and data source
 
 extension CountriesViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
@@ -73,6 +104,21 @@ extension CountriesViewController: UICollectionViewDelegate, UICollectionViewDat
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 }
+
+// MARK: - UISearchBarDelegate
+
+extension CountriesViewController: UISearchBarDelegate {
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        self.searchBar.showsCancelButton = true
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        self.searchBar.text = ""
+    }
+}
+
+// MARK: - Countries View Model Delegate
 
 extension CountriesViewController: CountriesViewModelDelegate {
     
