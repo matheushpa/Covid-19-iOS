@@ -9,7 +9,10 @@
 // MARK: - Colors
 
 let kPurpleDefaultColor = 0x441646
+let kWorldwideTitleColor = 0xB8B5BA
+let kWorldwideNumbersColor = 0x000000
 let kSearchBarTintColor = 0xE6E6E6
+let kSeparatorColor = 0xD9D5DB
 
 // MARK: - Titles
 
@@ -18,3 +21,5 @@ let kTabBarCountries = "Countries"
 let kCountriesCellIdentifier = "countriesCellIdentifier"
 let kSearch = "Search"
 let kClean = "Clean"
+let kWorldwideIdentifier = "worldwideCell"
+let kWorldwideTitles = ["Cases", "Deaths", "People recovered", "Today cases", "Active cases", "Critical cases", "Cases per One Million", "Deaths per One Million", "People tested", "Tests per One Million", "Affected countries"]
