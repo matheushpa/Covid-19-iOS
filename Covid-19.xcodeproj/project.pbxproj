@@ -13,6 +13,9 @@
 		2F3107692443B66700C9AC36 /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F3107662443B52100C9AC36 /* Montserrat-Bold.otf */; };
 		2F31076A2443B66700C9AC36 /* Montserrat-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F3107672443B52100C9AC36 /* Montserrat-Medium.otf */; };
 		2F31076B2443B66700C9AC36 /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F3107682443B52100C9AC36 /* Montserrat-SemiBold.otf */; };
+		2F31076D2443BC6900C9AC36 /* WorldwideHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F31076C2443BC6900C9AC36 /* WorldwideHeader.swift */; };
+		2F31076E2443BC6900C9AC36 /* WorldwideHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F31076C2443BC6900C9AC36 /* WorldwideHeader.swift */; };
+		2F31076F2443BC6900C9AC36 /* WorldwideHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F31076C2443BC6900C9AC36 /* WorldwideHeader.swift */; };
 		2F3B488224292EEA00A06377 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B488124292EEA00A06377 /* AppDelegate.swift */; };
 		2F3B488424292EEA00A06377 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B488324292EEA00A06377 /* SceneDelegate.swift */; };
 		2F3B488B24292EEB00A06377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F3B488A24292EEB00A06377 /* Assets.xcassets */; };
@@ -91,6 +94,7 @@
 		2F3107662443B52100C9AC36 /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
 		2F3107672443B52100C9AC36 /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.otf"; sourceTree = "<group>"; };
 		2F3107682443B52100C9AC36 /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
+		2F31076C2443BC6900C9AC36 /* WorldwideHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldwideHeader.swift; sourceTree = "<group>"; };
 		2F3B487E24292EEA00A06377 /* Covid-19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Covid-19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F3B488124292EEA00A06377 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F3B488324292EEA00A06377 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -257,6 +261,7 @@
 			children = (
 				2FB0B73F24295610005F5973 /* WorldwideViewController.swift */,
 				2F31075F2443A70300C9AC36 /* WorldwideTableViewCell.swift */,
+				2F31076C2443BC6900C9AC36 /* WorldwideHeader.swift */,
 			);
 			path = Worldwide;
 			sourceTree = "<group>";
@@ -427,6 +432,7 @@
 				2F3B48C6242944B100A06377 /* WorldwideViewModel.swift in Sources */,
 				2F3B48C1242941A900A06377 /* Cases.swift in Sources */,
 				2FD40C242430EE5700269A64 /* CountryDetailsViewModel.swift in Sources */,
+				2F31076D2443BC6900C9AC36 /* WorldwideHeader.swift in Sources */,
 				2FD40C202430EE2500269A64 /* CountryDetailsViewController.swift in Sources */,
 				2FD40C282430F60700269A64 /* ApiConfig.swift in Sources */,
 				2FB0B74024295610005F5973 /* WorldwideViewController.swift in Sources */,
@@ -447,6 +453,7 @@
 				2F3B48B32429391000A06377 /* MainTabBarController.swift in Sources */,
 				2F3107612443A70300C9AC36 /* WorldwideTableViewCell.swift in Sources */,
 				2FD40C292430F60700269A64 /* ApiConfig.swift in Sources */,
+				2F31076E2443BC6900C9AC36 /* WorldwideHeader.swift in Sources */,
 				2FB27578242EAE520058274E /* ImageManager.swift in Sources */,
 				2FD40C312430FF6700269A64 /* Constants.swift in Sources */,
 				2FB0B73D242955F2005F5973 /* CountriesViewController.swift in Sources */,
@@ -471,6 +478,7 @@
 				2F3B48B42429391000A06377 /* MainTabBarController.swift in Sources */,
 				2F3107622443A70300C9AC36 /* WorldwideTableViewCell.swift in Sources */,
 				2FD40C2A2430F60700269A64 /* ApiConfig.swift in Sources */,
+				2F31076F2443BC6900C9AC36 /* WorldwideHeader.swift in Sources */,
 				2FB27579242EAE520058274E /* ImageManager.swift in Sources */,
 				2FD40C322430FF6700269A64 /* Constants.swift in Sources */,
 				2FB0B73E242955F2005F5973 /* CountriesViewController.swift in Sources */,
