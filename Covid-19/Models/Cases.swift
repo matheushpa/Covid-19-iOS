@@ -17,10 +17,14 @@ class Cases: Codable {
     var countryInfo: Country?
     var country: String?
     var todayCases: Int?
+    var todayDeaths: Int?
     var active: Int?
     var critical: Int?
     var casesPerOneMillion: Float?
     var deathsPerOneMillion: Float?
+    var tests: Int?
+    var testsPerOneMillion: Float?
+    var affectedCountries: Int?
     
     enum CodingKeys: String, CodingKey {
         case cases, deaths, recovered, updated, country, todayCases, active, critical, countryInfo, casesPerOneMillion, deathsPerOneMillion

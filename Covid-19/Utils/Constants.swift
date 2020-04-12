@@ -9,9 +9,12 @@
 // MARK: - Colors
 
 let kPurpleDefaultColor = 0x441646
+let kSearchBarTintColor = 0xE6E6E6
 
 // MARK: - Titles
 
 let kTabBarWorldwide = "Worldwide"
 let kTabBarCountries = "Countries"
 let kCountriesCellIdentifier = "countriesCellIdentifier"
+let kSearch = "Search"
+let kClean = "Clean"
