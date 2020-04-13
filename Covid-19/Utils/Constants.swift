@@ -24,4 +24,4 @@ let kClean = "Clean"
 let kWorldwideIdentifier = "worldwideCell"
 let kWorldwideHeaderIdentifier = "worldwideHeader"
 let kWorldwideStatistics = "Worldwide Statistics"
-let kWorldwideTitles = ["Cases", "Deaths", "People recovered", "Today cases", "Active cases", "Critical cases", "Cases per One Million", "Deaths per One Million", "People tested", "Tests per One Million", "Affected countries"]
+let kWorldwideTitles = ["Cases", "Today's cases", "Cases per One Million", "Active cases", "Critical cases", "Deaths", "Today's deaths", "Deaths per One Million", "People recovered", "People tested", "Tests per One Million", "Affected countries"]

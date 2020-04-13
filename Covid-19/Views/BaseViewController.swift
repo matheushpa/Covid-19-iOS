@@ -9,8 +9,6 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-    
-    let worldwideViewModel = WorldwideViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +17,15 @@ class BaseViewController: UIViewController {
     
     // MARK: - Setup methods
     func setupLayout() {
+        title = "Covid-19"
         view.backgroundColor = .white
+        setupNavigationBar()
+    }
+    
+    func setupNavigationBar() {
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.tintColor = UIColor.init(netHex: kPurpleDefaultColor)
+        navigationController?.navigationBar.barTintColor = .white
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.init(netHex: kPurpleDefaultColor), NSAttributedString.Key.font: UIFont(name: "Montserrat-Bold", size: 16) as Any]
     }
 }

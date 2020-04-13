@@ -72,8 +72,7 @@ extension WorldwideViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: kWorldwideIdentifier, for: indexPath) as? WorldwideTableViewCell {
-            cell.titleLabel.text = kWorldwideTitles[indexPath.row]
-            cell.bindData(worldwideCases: viewModel.getCases())
+            cell.bindData(worldwideCases: viewModel.getCases(), index: indexPath.row)
             return cell
         } else {
             return UITableViewCell()

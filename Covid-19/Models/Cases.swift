@@ -27,7 +27,7 @@ class Cases: Codable {
     var affectedCountries: Int?
     
     enum CodingKeys: String, CodingKey {
-        case cases, deaths, recovered, updated, country, todayCases, active, critical, countryInfo, casesPerOneMillion, deathsPerOneMillion
+        case cases, deaths, recovered, updated, country, todayCases, active, critical, countryInfo, casesPerOneMillion, deathsPerOneMillion, tests, testsPerOneMillion, affectedCountries, todayDeaths
     }
     
     static func decode(from data: Data) -> Cases? {

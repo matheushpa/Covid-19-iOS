@@ -32,7 +32,7 @@ class WorldwideViewModel {
     }
     
     func getNumberOfRows() -> Int {
-        return 11
+        return kWorldwideTitles.count
     }
     
     func rowHeight() -> CGFloat {

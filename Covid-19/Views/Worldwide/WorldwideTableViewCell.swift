@@ -47,11 +47,47 @@ class WorldwideTableViewCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
     }
     
-    func bindData(worldwideCases: Cases) {
+    func bindData(worldwideCases: Cases, index: Int) {
+        titleLabel.text = kWorldwideTitles[index]
+        switch index {
+        case 0:
+            numbersLabel.text = convertIntToString(value: worldwideCases.cases ?? 0)
+        case 1:
+            numbersLabel.text = convertIntToString(value: worldwideCases.todayCases ?? 0)
+        case 2:
+            numbersLabel.text = convertFloatToString(value: worldwideCases.casesPerOneMillion ?? 0)
+        case 3:
+            numbersLabel.text = convertIntToString(value: worldwideCases.active ?? 0)
+        case 4:
+            numbersLabel.text = convertIntToString(value: worldwideCases.critical ?? 0)
+        case 5:
+            numbersLabel.text = convertIntToString(value: worldwideCases.deaths ?? 0)
+        case 6:
+            numbersLabel.text = convertIntToString(value: worldwideCases.todayDeaths ?? 0)
+        case 7:
+            numbersLabel.text = convertFloatToString(value: worldwideCases.deathsPerOneMillion ?? 0)
+        case 8:
+            numbersLabel.text = convertIntToString(value: worldwideCases.recovered ?? 0)
+        case 9:
+            numbersLabel.text = convertIntToString(value: worldwideCases.tests ?? 0)
+        case 10:
+            numbersLabel.text = convertFloatToString(value: worldwideCases.testsPerOneMillion ?? 0)
+        case 11:
+            numbersLabel.text = convertIntToString(value: worldwideCases.affectedCountries ?? 0)
+        default:
+            return numbersLabel.text = "-"
+        }
+    }
+    
+    func convertIntToString(value: Int) -> String {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .decimal
-        let formattedNumber = numberFormatter.string(from: NSNumber(value: worldwideCases.deaths ?? 0))
-        numbersLabel.text = formattedNumber
-        print(worldwideCases)
+        return numberFormatter.string(from: NSNumber(value: value)) ?? "-"
+    }
+    
+    func convertFloatToString(value: Float) -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        return numberFormatter.string(from: NSNumber(value: value)) ?? "-"
     }
 }
